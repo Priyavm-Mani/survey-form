@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0 0 255);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title & Description */
+h1 {
+  color: rgb(0 0 0);
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgb(0 0 0);
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Fieldset */
+fieldset {
+  border: none;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Focus Styles */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Radio Buttons & Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Textarea */
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}

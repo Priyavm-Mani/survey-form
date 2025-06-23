@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=width-device-width, initial scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Name:<input id="name" type="text" name="name" placeholder="Enter your Name" required></label>
+<label id="email-label" for="email">Email"<input id="email" type="email" name="email" placeholder="Enter your Email" required></label>
+<label id="number-label" for="number">Age (Optional):<input id="number" type="number" name="number" min="16" max="90" placeholder="Age" required></label>
+</fieldset>
+<fieldset>
+  <legend>Which option best describes your current role?</legend>
+  <label for="dropdown">
+  <select id="dropdown" name="role">
+  <label>
+    <option value="">Select current role</option>
+  <option value="Student">Student</option>
+  <option value="Working">Working</option>
+  <option value="others">others</option>
+  </select>
+   </label>
+</fieldset>
+<fieldset>
+   <legend>Would you recommend freeCodeCamp to a friend?</legend>
+  <label><input type="radio" name="recommend" value="Definitely">Definitely</label>
+ <label><input type="radio" name="recommend" value="Maybe">Maybe</label>
+  <label><input type="radio" name="recommend" value="Not sure">Not sure</label>
+</fieldset>
+<fieldset>
+  <legend>What is your favorite feature of freeCodeCamp?</legend>
+  <label><input type="checkbox" name="feature" value="Front-end Projects">Front-end Projects</label>
+  <label><input type="checkbox" name="feature" value="Back-end Projects">Back-end Projects</label>
+  <label><input type="checkbox" name="feature" value="Additional Courses">Additional Courses</label>
+</fieldset>
+<fieldset>
+  <legen>Any comments or suggestions?</legend>
+  <textarea name="comments" placeholder="Enter your comments here"></textarea>
+  </fieldset>
+  <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
